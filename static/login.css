@@ -1,0 +1,156 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("https://img.freepik.com/fotos-gratis/oculos-e-grafico-de-olho-no-fundo-branco_1387-378.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Container principal */
+section {
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
+/* Container do input e do label */
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+/* Estilo dos ícones */
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.2rem;
+    top: 20px;
+    /* Alinha o ícone */
+}
+
+/* Estilo do campo de texto */
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: black;
+}
+
+/* Estilo do label (texto que flutua) */
+.inputbox label {
+    position: absolute;
+    top: 5px;
+    /* Posição inicial do label */
+    left: 5px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Estilo do label quando o input está focado ou preenchido */
+.inputbox input:focus~label,
+.inputbox input:valid~label {
+    top: -5px;
+    /* Move o label para cima */
+}
+
+/* Estilos do "Lembrar" e "Esqueceu a senha?" */
+.forget {
+    margin: 35px 0;
+    right: 8px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forget label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+.forget label input {
+    margin-right: 3px;
+}
+
+.forget a {
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.forget a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do botão */
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Estilos do "Criar Conta" */
+.registrar {
+    font-size: 0.9rem;
+    color: black;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.registrar p a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.registrar p a:hover {
+    text-decoration: underline;
+}
